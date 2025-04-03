@@ -1,0 +1,13 @@
+<%- include('partials/header') %>
+<div class="user-dashboard">
+  <div class="main-content">
+    <h1>New Post</h1>
+    
+    <form action="/post/<%= post.id %>/edit" method="POST">
+      <div class="form-group">
+        <textarea name="title" class="title-post" placeholder="Title"><%= post.title %></textarea>
+        <textarea name="post" class="content-post" placeholder="Post"><%= post.content %></textarea>
+      </div>
+      <button type="submit" class="update-btn">Update</button>
+    </form>
+  </div>

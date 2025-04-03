@@ -1,0 +1,47 @@
+ <%- include('../partials/header') %>
+
+<% posts.forEach(post => { %>
+  <% if (currentUser === post.user_id) { %>
+    <div class="heading">
+      <div class="logo"></div>
+      <div>
+          <a class="profile-link" href="/profile"> <div class="profile-logo"></div><%= post.user_name %></a>
+      </div>
+  </div>
+  <% } %>
+  <% }) %>
+
+<% posts.forEach(post => { %>
+
+  <div class="post">
+    <% if (currentUser === post.user_id) { %>
+      <div class="publisher">
+        <%= post.user_name %>
+      </div>
+      <h3 class="post-title">
+        <%= post.title %>
+      </h3>
+      <p class="post-content">
+        <%= post.content %>
+      </p>
+      
+      <div class="post-actions">
+        <a href="/post/<%= post.id %>/edit">
+          <button type="button" name="edit">Edit</button>
+        </a>
+        <form action="/post/<%= post.id %>/delete" method="POST"
+              onsubmit="return confirm('Are you sure you want to delete your post? This action cannot be undone.');">
+          <button type="submit" name="delete">Delete</button>
+        </form>
+      </div>
+    <% } else { %>
+      <a href="/user/<%= post.user_id %>">
+        <p><%= post.user_name %></p>
+      </a>
+      <h3><%= post.title %></h3>
+      <p><%= post.content %></p>
+    <% } %>
+  </div>
+<% }) %>
+
+<a href="/post"><button>New post</button></a>

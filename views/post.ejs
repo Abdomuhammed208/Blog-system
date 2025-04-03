@@ -1,0 +1,10 @@
+<%- include('partials/header') %>
+New post page
+<form action="/post" method="POST">
+    <div class="form-group">
+        <!-- <input type="field" class="form-control text-center new-post" name="post" placeholder="New Post"> -->
+        <textarea name="title" class="new-post" placeholder="Title"></textarea>
+        <textarea name="post" class="new-post" placeholder="New Post"></textarea>
+    </div>
+    <button type="submit">Post</button>
+</form>

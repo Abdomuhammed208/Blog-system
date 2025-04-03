@@ -1,0 +1,27 @@
+<%- include('partials/header') %>
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <% if (Array.isArray(users)) { %>
+      <% users.forEach(user => { %>
+        <p class="content-text"> Name:  <%= user.name %></p>
+        <p class="content-text"> Mobile number: <%= user.mobile %> </p>
+        <p class="content-text"> Email address:  <%= user.email %></p>
+      <% }) %>
+    <% } else if (users) { %>
+      <p class="content-text"> Name:  <%= users.name %></p>
+      <p class="content-text"> Mobile number: <%= users.mobile %> </p>
+      <p class="content-text"> Email address:  <%= users.email %></p>
+    <% } else { %>
+      <p class="content-text"> No user data available. </p>
+    <% } %>
+
+    <hr>
+    <a class="btn btn-dark btn-lg" href="/submit" role="button">Edit</a>
+<br>
+    <a class="btn btn-light btn-lg" href="/logout" role="button">Log Out</a>
+
+  </div>
+</div>
+
+<%- include('partials/footer') %>
