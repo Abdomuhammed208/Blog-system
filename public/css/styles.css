@@ -1,0 +1,319 @@
+
+body {
+  background-color: #E8ECEF;
+}
+
+.centered {
+    padding-top: 200px;
+    text-align: center;
+}
+
+.content-text {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #000;
+}
+
+.post-container{
+  border: 10px solid black;
+  height: 200px;
+  width: 320px;
+  display: grid;
+  grid-template-columns: 1fr, 1fr, 1fr;
+  grid-template-rows: 1fr, 1fr, 1fr;
+}
+.new-post{
+  height: 100px;
+  width: 320px;
+}
+.btn-dark{
+  margin-top: 10px;
+}
+.registration-link{
+  margin-top: 10px;
+}
+/*<------ user dashbored ------>*/
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #0066cc;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+header a {
+  color: white;
+  margin-left: 15px;
+}
+
+.main-content {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.post {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.post h3 {
+  font-size: 24px;
+  margin-top: 10px;
+  color: #333;
+}
+
+.post p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.post .publisher {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0077b6;
+}
+
+.post .post-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.post-actions button {
+  background-color: #0077b6;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.post-actions button:hover {
+  background-color: #005f8c;
+}
+
+.post-actions form button {
+  background-color: #d9534f;
+}
+
+.post-actions form button:hover {
+  background-color: #c9302c;
+}
+
+/* Styling for links in posts */
+.post a {
+  color: #0077b6;
+  text-decoration: none;
+}
+
+.post a:hover {
+  text-decoration: underline;
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 30px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+/* Optional: Responsive design */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 10px;
+  }
+
+  .post {
+    padding: 15px;
+  }
+
+  .post-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .post-actions button {
+    margin-bottom: 10px;
+  }
+}
+
+
+/*<------header------>*/
+
+.heading {
+  width: 100%;
+  height: 80px;
+  background-color: #333; 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20px;  
+  box-sizing: border-box;
+}
+.profile-logo{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #E8ECEF;
+}
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.jumbotron {
+  background-color: #ffffff;
+  padding: 50px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 1000px;
+}
+
+.content-text {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #333;
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-light {
+  background-color: #f8f9fa;
+  color: #333;
+  border: 2px solid #ccc;
+  padding: 12px 25px;
+  border-radius: 5px;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-light:hover {
+  background-color: #ddd;
+}
+
+.btn-dark {
+  background-color: #343a40;
+  color: #fff;
+  border: 2px solid #343a40;
+  padding: 12px 25px;
+  border-radius: 5px;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-dark:hover {
+  background-color: #23272b;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 5px;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+button[type="submit"]:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .jumbotron {
+    padding: 30px 15px;
+    margin: 20px;
+  }
+
+  .content-text {
+    font-size: 1.2rem;
+    padding: 12px;
+  }
+
+  .btn-light, .btn-dark, .btn-danger {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+header {
+  background-color: #343a40;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+header a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 700px;
+}
+
+body {
+  background-color: #E8ECEF;
+  padding: 20px;
+}
+
+.centered {
+  padding-top: 50px;
+  text-align: center;
+}

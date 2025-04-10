@@ -1,0 +1,127 @@
+<%- include('partials/header') %>
+
+<div class="new-post-container">
+    <h1 class="page-title">Create New Post</h1>
+    
+    <form action="/post" method="POST" class="post-form">
+        <div class="form-group">
+            <input type="text" 
+                   name="title" 
+                   class="form-input title-input" 
+                   placeholder="Post Title" 
+                   required>
+            
+            <textarea name="post" 
+                      class="form-input post-content" 
+                      placeholder="Share your thoughts..." 
+                      rows="8"
+                      required></textarea>
+        </div>
+        
+        <div class="form-actions">
+            <button type="submit" class="submit-btn">Publish Post</button>
+            <a href="/user" class="cancel-btn">Cancel</a>
+        </div>
+    </form>
+</div>
+
+<style>
+.new-post-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.page-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+}
+
+.post-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.title-input {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.post-content {
+    min-height: 200px;
+    resize: vertical;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.submit-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #0069d9;
+}
+
+.cancel-btn {
+    padding: 12px 25px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.cancel-btn:hover {
+    background-color: #f8f9fa;
+}
+
+@media (max-width: 768px) {
+    .new-post-container {
+        margin: 20px;
+        padding: 20px;
+    }
+    
+    .form-actions {
+        flex-direction: column;
+    }
+    
+    .submit-btn, .cancel-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+</style>
